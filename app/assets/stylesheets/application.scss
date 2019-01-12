@@ -1,0 +1,87 @@
+@import "./reset";
+@import "font-awesome";
+@import "config/colors";
+@import "modules/group";
+@import "modules/user";
+@import "./chatroom";
+@import "modules/flash";
+
+
+
+#head{
+  background: #38AEF0;
+  width: 100vw;
+  height: 30px;
+  position: absolute;
+}
+
+.header{
+  text-align: center;
+  margin-top: 5px;
+}
+
+//左側コンテンツ----------------------------------------------------------------//
+#left-content{
+  background: #2f3e51;
+  width: 300px;
+  height: 100vh;
+  float: left;
+}
+
+.username{
+  background-color: black;
+  color: white;
+  width: 300px;
+  height: 10vh;
+}
+
+.thread{
+  background-color: #2f3e51;
+  color: white;
+  width: 300px;
+  height: 90vh;
+}
+
+
+//右上コンテンツ----------------------------------------------------------------//
+
+
+#main-content1{
+  width: calc(100vw - 300px);
+  height: 100vh;
+  float:right;
+}
+
+.editbox{
+  width: 60px;
+  height: 40px;
+  border: solid 1px black;
+  background-color: black;
+  color: white;
+  text-align: center;
+  float: right;
+  margin: 20px 40px 0px 0px;
+}
+
+.groupname{
+  background-color: red;
+  width: calc(100vw - 300px);
+  height: 10vh;
+  padding: 20px, 20px, 0px, 20px;
+}
+
+//右下コンテンツ----------------------------------------------------------------//
+
+.comments{
+  background-color: #EEEEEE;
+  width: calc(100vw - 300px);
+  height: 80vh;
+}
+
+.messagebox{
+  background-color: gray;
+  width: calc(100vw - 300px);
+  height: 10vh;
+  margin-bottom: 0px;
+}
+
