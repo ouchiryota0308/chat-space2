@@ -1,24 +1,9 @@
-%div#left-content
-  %div.username Ryota
-  %div.thread First Group
-
-%div#main-content1
-  %div.editbox Edit
-  %div.groupname
-    First Group
-    Ryota, Satoshi, Kenji
-  %div.comments Name:Ryota Date:2018/12/31 Comment: 初めての投稿です。
-  %div.messagebox
-    %form{:action => "/", :method => "post"}
-      投稿：
-      %input{:name => "title", :size => "80"}
-
-       .form
-      = form_for [@group, @message] do |f|
-        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-        .form__mask
-          = f.label :image, class: 'form__mask__image' do
-            = fa_icon 'picture-o', class: 'icon'
-            = f.file_field :image, class: 'hidden'
-        = f.submit 'Send', class: 'form__submit'
+.form
+  = form_for [@group, @message] do |f|
+    = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+    .form__mask
+      = f.label :image, class: 'form__mask__image' do
+        = fa_icon 'picture-o', class: 'icon'
+        = f.file_field :image, class: 'hidden'
+    = f.submit 'Send', class: 'form__submit'
 
