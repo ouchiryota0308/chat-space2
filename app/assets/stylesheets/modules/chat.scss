@@ -1,5 +1,6 @@
 .chat {
   width: calc(100% - 300px);
+  float: right;
   .header {
     box-sizing: border-box;
     height: 100px;
@@ -12,7 +13,6 @@
         margin-top: 35px;
       }
       &__members {
-        @include flexbox;
         color: $light_gray;
         font-size: 12px;
         margin-top: 15px;

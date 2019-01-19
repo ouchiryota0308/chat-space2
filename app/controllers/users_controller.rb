@@ -19,4 +19,3 @@ class UsersController < ApplicationController
 
 
 end
-
