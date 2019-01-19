@@ -4,7 +4,13 @@
 .chat
   .header
     .left-header
+      .left-header__title
+        = @group.name
+      .left-header__members
+        = current_user.name
     .right-header
+      = link_to "EDIT", edit_group_path(@group)
+
   .messages
     = render @messages
 
