@@ -18,3 +18,5 @@
 
 #Ignore this
 public/uploads/*
+
+config/secrets.yml
